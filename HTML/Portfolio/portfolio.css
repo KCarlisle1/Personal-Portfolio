@@ -1,0 +1,321 @@
+:root{
+    --dark-blue: #1F2360;
+    --light-blue: #999CDF;
+    --darker-yellow: rgb(243, 180, 43);
+    --dark-yellow: #fce064;
+    --light-yellow: #fffbce;
+}
+
+html, body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar{
+    background-color: var(--dark-blue);
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#nav-name{
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: var(--light-yellow);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#top-portion{
+    background-color: var(--light-blue);
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+#intro{
+    padding: 50px;
+    padding-top: 100px;
+    color: white;
+    max-width: 400px;
+}
+
+#intro-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#intro-paragraph{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#bubbles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-bubble{
+    border: 3px solid var(--light-blue);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    background-color: rgb(226, 228, 245);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+}
+
+.skills-bubble p{
+    margin: 10px;
+    font-weight: bold;
+    color: rgb(85, 88, 109);
+}
+
+#bubble-1, #bubble-2, #bubble-3{
+    position: static;
+}
+
+#bottom-portion{
+    background: linear-gradient(to bottom, var(--light-yellow), var(--dark-yellow));
+    width: 100%;
+}
+
+.section-title{
+    margin: 0 0 20px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-decoration: underline;
+}
+
+#projects, #about, #contact{
+    padding-left: 20px;
+}
+
+#project-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.project-btn{
+    background-color: var(--dark-yellow);
+    width: 250px;
+    height: 150px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    border: 3px solid rgb(255, 166, 0);
+    border-radius: 7px;
+    box-shadow: inset 0px 0px 8px rgb(255, 166, 0);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.project-btn:hover{
+    background-color: var(--darker-yellow);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 12px rgb(255, 166, 0);
+}
+
+
+#about-paragraph{
+    max-width: 900px;
+    font-size: 22px;
+    line-height: 1.8;
+    color: var(--dark-blue);
+    background: linear-gradient(145deg, rgba(153,156,223,0.5), rgba(255,225,91,0.9));
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-paragraph:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#contact-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.contact-type{
+    background: rgba(153, 156, 223, 0.4);
+    padding: 20px 30px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+footer{
+    background-color: rgba(153, 156, 223, 0.2);
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+
+footer:hover{
+    color: black;
+}
+
+@media (max-width: 600px){
+
+    #nav-name{
+        font-size: 18px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    .skills-bubble {
+        position: static;
+        width: 120px;
+        height: 120px;
+        font-size: 12px;
+        gap: 0px;
+    }
+
+    #about-paragraph{
+        width: 300px;
+        font-size: 16px;
+    }
+
+    #contact-container{
+        display: block;
+    }
+
+    .section-title{
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+
+#contact-container{
+    gap: 15px;
+    font-size: 16px;
+}
+
+}
+
+@media (max-width: 1100px) and (min-width: 600px){ /*Prevents bubbles from overlapping intro*/
+
+    .skills-bubble{
+        position: static;
+        width: 160px;
+        height: 160px;
+    }
+
+    #bubbles-container{
+        gap: 50px;
+    }
+
+    #top-portion{
+        padding-bottom: 60px;
+    }
+
+    #about-paragraph{
+        width: 550px;
+    }
+
+    #contact-container{
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 1101px){
+
+    #bubble-1{
+        position: absolute;
+        top: 100px;
+        right: 400px;
+    }
+
+    #bubble-2{
+        position: absolute;
+        top: 200px;
+        right: 100px;
+    }
+
+    #bubble-3{
+        position: absolute;
+        top: 360px;
+        right: 300px;
+    }
+}
+
+
+@media (min-width: 2200px){
+    
+    #intro{
+        max-width: 600px;
+    }
+    
+    #intro-title{
+        font-size: 70px;
+    }
+
+    #intro-paragraph{
+        font-size: 28px;
+    }
+    
+    .project-btn{
+        width: 400px;
+        height: 230px;
+        font-size: 35px;
+    }
+
+    #about-paragraph{
+        max-width: 1200px;
+        font-size: 28px;
+    }
+
+    #contact-container{
+        font-size: 25px;
+    }
+
+}

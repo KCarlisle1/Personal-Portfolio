@@ -1,0 +1,119 @@
+:root{
+  --border-color: rgb(134, 185, 123);
+  --register-color: rgb(159, 204, 157);
+  --register-shadow: rgb(82, 129, 78);
+}
+
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body{
+  background: linear-gradient(to bottom, rgb(203, 231, 177), rgb(195, 255, 139));
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input-div{
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: rgb(243, 245, 167);
+  padding: 10px;
+  border: solid var(--border-color) 5px;
+  border-radius: 10px;
+}
+
+h1{
+  text-decoration: underline;
+}
+
+#cash{
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  font-family: cursive;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 5px var(--register-shadow);
+}
+
+#purchase-btn{
+  border: solid 3px var(--border-color);
+  background-color: yellow;
+  font-weight: bold;
+  margin: 10px auto;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#purchase-btn:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+#print-results{
+  background-color: white;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+#price{
+  font-weight: bold;
+  background-color: var(--border-color);
+  width: 100px;
+  padding: 5px;
+  display: inline-block;
+  margin: 20px 10px;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 5px black;
+  color: yellow;
+  text-shadow: 1px 1px 2px var(--register-shadow);
+}
+
+#top-rect{
+  background-color: var(--register-color);
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--register-shadow);
+  border-radius: 10px 10px 0 0;
+}
+
+#middle-rect{
+  border-bottom: 75px solid var(--register-color);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#bottom-rect{
+  background-color: var(--register-shadow);
+  width: 450px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+}
+
+#change{
+  background-color: white;
+  width: 100px;
+  float: right;
+  margin: 30px 20px;
+  padding: 5px;
+  font-size: 13px;
+  border-top: solid 5px black;
+}

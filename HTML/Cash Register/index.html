@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content ="width=device-width, initial-scale = 1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cash Register</title>
+  </head>
+
+  <body>
+    <div id="background-gradient-div">
+      <div id="input-div">
+        <h1>Cash Register</h1>
+        <p>Please input your money:</p>
+        <input id="cash" placeholder="$" />
+        <button id="purchase-btn" type="submit">Purchase</button>
+        <div id="print-results">
+          <div id="change-due"></div>
+          <div id="cash-in-drawer"></div>
+        </div>
+      </div>
+
+      <div id="css-drawer">
+        <div id="top-rect">
+          <p id="price"></p>
+        </div>
+        <div id="middle-rect">
+          <div id="middle-left"></div>
+          <div id="middle-right"></div>
+        </div>
+        <div id="bottom-rect">
+          <div id="print-sheet">
+            <p id="change"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <script src="script.js"></script>
+</html>
