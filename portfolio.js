@@ -29,7 +29,7 @@ financeManagerBtn.addEventListener('mouseout', () => {
 
 
 palindromeCheckerBtn.addEventListener('click', () => {
-    window.location.href='palindrome-checker/dist/index.html';
+    window.location.href='palindrome-checker/palindrome.html';
 })
 palindromeCheckerBtn.addEventListener('mouseover', () => {
     palindromeCheckerBtn.textContent = "Palindrome Checker - A React.js tool for identifying palindromes.";
