@@ -7,7 +7,7 @@ const moreBtn = document.getElementById('to-be-added-btn');
 
 
 butterflidBtn.addEventListener('click', () => {
-    window.location.href='/BUTTERFLI-D/homepage.html';
+    window.location.href='BUTTERFLI-D/homepage.html';
 })
 butterflidBtn.addEventListener('mouseover', () => {
     butterflidBtn.textContent = "ButterflI-D - A British butterfly identification website. Test your knowledge!";
@@ -18,7 +18,7 @@ butterflidBtn.addEventListener('mouseout', () => {
 
 
 financeManagerBtn.addEventListener('click', () => {
-    window.location.href='/Finance Manager/homepage.html';
+    window.location.href='Finance Manager/homepage.html';
 })
 financeManagerBtn.addEventListener('mouseover', () => {
     financeManagerBtn.textContent = "Finance Manager - A yearly record utility to help visualise financial changes.";
@@ -29,7 +29,7 @@ financeManagerBtn.addEventListener('mouseout', () => {
 
 
 palindromeCheckerBtn.addEventListener('click', () => {
-    window.location.href='/Palindrome Checker/palindrome.html';
+    window.location.href='Palindrome Checker/palindrome.html';
 })
 palindromeCheckerBtn.addEventListener('mouseover', () => {
     palindromeCheckerBtn.textContent = "Palindrome Checker - A React.js tool for identifying palindromes.";
@@ -40,7 +40,7 @@ palindromeCheckerBtn.addEventListener('mouseout', () => {
 
 
 romanNumeralConverterBtn.addEventListener('click', () => {
-    window.location.href='/Roman Numeral Converter/numeral.html';
+    window.location.href='Roman Numeral Converter/numeral.html';
 })
 romanNumeralConverterBtn.addEventListener('mouseover', () => {
     romanNumeralConverterBtn.textContent = "Roman Numeral Converter - A React.js tool for converting numbers into Roman numerals.";
@@ -51,7 +51,7 @@ romanNumeralConverterBtn.addEventListener('mouseout', () => {
 
 
 cashRegisterBtn.addEventListener('click', () => {
-    window.location.href='/Cash Register/register.html';
+    window.location.href='Cash Register/register.html';
 })
 cashRegisterBtn.addEventListener('mouseover', () => {
     cashRegisterBtn.textContent = "Cash Register - A fun, CSS-based cash register simulation.";
