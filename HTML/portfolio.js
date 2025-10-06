@@ -29,7 +29,7 @@ financeManagerBtn.addEventListener('mouseout', () => {
 
 
 palindromeCheckerBtn.addEventListener('click', () => {
-    window.location.href='/Palindrome Checker/index.html';
+    window.location.href='/Palindrome Checker/palindrome.html';
 })
 palindromeCheckerBtn.addEventListener('mouseover', () => {
     palindromeCheckerBtn.textContent = "Palindrome Checker - A React.js tool for identifying palindromes.";
@@ -40,7 +40,7 @@ palindromeCheckerBtn.addEventListener('mouseout', () => {
 
 
 romanNumeralConverterBtn.addEventListener('click', () => {
-    window.location.href='/Roman Numeral Converter/index.html';
+    window.location.href='/Roman Numeral Converter/numeral.html';
 })
 romanNumeralConverterBtn.addEventListener('mouseover', () => {
     romanNumeralConverterBtn.textContent = "Roman Numeral Converter - A React.js tool for converting numbers into Roman numerals.";
@@ -51,7 +51,7 @@ romanNumeralConverterBtn.addEventListener('mouseout', () => {
 
 
 cashRegisterBtn.addEventListener('click', () => {
-    window.location.href='/Cash Register/index.html';
+    window.location.href='/Cash Register/register.html';
 })
 cashRegisterBtn.addEventListener('mouseover', () => {
     cashRegisterBtn.textContent = "Cash Register - A fun, CSS-based cash register simulation.";

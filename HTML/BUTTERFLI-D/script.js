@@ -60,4 +60,4 @@ indexInfo.addEventListener('click', () => infoClicked(indexInfo));
 
 multipleChoiceBtn.addEventListener('click', () => goToQuiz('multiple-choice'));
 singleChoiceBtn.addEventListener('click', () => goToQuiz('single-choice'));
-indexBtn.addEventListener('click', () => goToQuiz('index'));
+indexBtn.addEventListener('click', () => goToQuiz('butterfly-index'));
