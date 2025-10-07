@@ -591,6 +591,19 @@ const budgetAdded = (e) => {
 
     budgetItemDiv.querySelector('.remove-btn').addEventListener('click', () => {
         budgetItemDiv.remove();
+
+        const index = existingBudgets.indexOf(category); //enables category budget to be added again
+        if(index > -1){
+            existingBudgets.splice(index, 1);
+        }
+
+        const budgetsArrIndex = budgetsArr.findIndex( b => b.category === category)
+        if(budgetsArrIndex > - 1){
+            budgetsArr.splice(budgetsArrIndex, 1);
+        }
+
+        updateDisplays();
+        
     });
 
     budgetItemsContainer.appendChild(budgetItemDiv);
