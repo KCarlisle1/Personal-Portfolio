@@ -40,7 +40,7 @@ palindromeCheckerBtn.addEventListener('mouseout', () => {
 
 
 romanNumeralConverterBtn.addEventListener('click', () => {
-    window.location.href='roman-numeral-converter/numeral.html';
+    window.location.href='roman-numeral-converter';
 })
 romanNumeralConverterBtn.addEventListener('mouseover', () => {
     romanNumeralConverterBtn.textContent = "Roman Numeral Converter - A React.js tool for converting numbers into Roman numerals.";
